@@ -1,7 +1,9 @@
+# Just put the videos on the "video_ads" folder and do "python playvideosonloop.py" on the terminal
+
 import cv2
 import os
 
-path = "/home/jc/robin/video_ads"
+path = "video_ads/"
 vid_list = os.listdir(path)
 
 print(vid_list)
