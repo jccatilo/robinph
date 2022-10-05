@@ -1,0 +1,6 @@
+pip install python-barcode
+pip install python-barcode[images]
+pip install qrcode
+pip install qrcode[pil]
+pip install pyzbar
+pip install pyzbar[scripts]
