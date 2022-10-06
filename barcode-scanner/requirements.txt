@@ -4,3 +4,4 @@ pip install qrcode
 pip install qrcode[pil]
 pip install pyzbar
 pip install pyzbar[scripts]
+pip3 install eansearch

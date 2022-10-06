@@ -11,6 +11,9 @@ for i in result:
 barcode = [*decoded[0]]
 print(barcode)
 
+code = ''.join(barcode[:])
+print("Barcode: "+ code)
+
 country_code = ''.join(barcode[:3])
 # country codes: https://www.barcodestalk.com/learn-about-barcodes/resources/barcode-country-codes#:~:text=Barcode%20prefixes%20do%20not%20provide,country%20code%20of%20070%20%E2%80%93%20079.\
 print("Country code: "+country_code)
@@ -23,3 +26,16 @@ print("Product code: " + product_code)
 
 check_digit = ''.join(barcode[-1:])
 print("Check digit: "+ check_digit)
+
+
+# https://www.ean-search.org/ean-api-intro.html
+
+# from eansearch import EANSearch
+
+# ean = code
+# apiToken = "abcdef"
+
+# lookup = EANSearch(apiToken)
+
+# name = lookup.barcodeLookup(ean)
+# print(ean, " is ", name)
